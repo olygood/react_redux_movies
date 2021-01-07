@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './components/search-bar'
-import VIdeoList from './containers/video-list'
+import VideoList from './containers/video-list'
 import VideoDetail from './components/video-detail'
 import axios from 'axios'
 
@@ -31,7 +31,7 @@ class App extends Component {
      // afficher videoList si il y a bien des films à l'interieur
     const renderVideoList = ()=> {
       if(this.state.movieList.length>=5){
-        return <VIdeoList movieList= {this.state.movieList} />
+        return <VideoList movieList= {this.state.movieList} />
 
       }
     }
